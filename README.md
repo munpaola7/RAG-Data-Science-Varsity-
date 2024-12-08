@@ -7,15 +7,15 @@ This project implements a Retrieval-Augmented Generation (RAG) application that 
 
 ## Project Goals
 1. **Implement Vector Search**:
-   - Use tools like FAISS, Annoy, or Pinecone to index and retrieve embeddings for Wikipedia articles.
+   - Index and retrieve embeddings for Wikipedia articles.
    - Perform chunking, embedding generation, and efficient similarity searches.
 
 2. **Integrate Knowledge Graphs**:
-   - Use Knowledge Graphs like **DBpedia** or **YAGO** to improve retrieval.
+   - Use Knowledge Graphs to improve retrieval.
    - Query Knowledge Graphs using SPARQL to incorporate structured data into the pipeline.
 
 3. **Generate Responses**:
-   - Use a publicly available **Language Model (LLM)** to generate responses based on retrieved data.
+   - Use a publicly available LLM to generate responses based on retrieved data.
    - Support both free and paid models (e.g., OpenAI’s models, Microsoft Phi, or LLaMA).
 
 ---
