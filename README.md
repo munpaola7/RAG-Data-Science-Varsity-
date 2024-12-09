@@ -63,4 +63,6 @@ Ensure you have the following libraries installed before running the project:
 
 ## Contributors
 
-Paola Munoz
+1. Paola Munoz
+2. Hilary Wang
+3. Rohan Vuppala
