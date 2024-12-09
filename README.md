@@ -5,38 +5,17 @@ This project implements a Retrieval-Augmented Generation (RAG) application that 
 
 ---
 
-## Project Goals
-1. **Implement Vector Search**:
-   - Index and retrieve embeddings for Wikipedia articles.
-   - Perform chunking, embedding generation, and efficient similarity searches.
-
-2. **Integrate Knowledge Graphs**:
-   - Use Knowledge Graphs to improve retrieval.
-   - Query Knowledge Graphs to incorporate structured data into the pipeline.
-
-3. **Generate Responses**:
-   - Use a publicly available LLM to generate responses based on retrieved data.
-
-4. **Develop a Functional Application**:
-   - Build a system capable of taking a query as input, retrieving relevant information, and generating accurate, contextually rich responses.
-
-5. **Evaluate and Optimize**:
-   - Assess response accuracy, relevance, and quality.
-   - Refine the retriever and generator components for optimal performance.
-
----
-
-## Key Features
+## Project Features
 1. **Data Collection**:
    - Process 100,000 Wikipedia articles.
    - Use these articles to build a Knowledge Graph and vector database.
 
 2. **Knowledge Graph Integration**:
-   - Enhance retrieval using structured data from Knowledge Graphs.
+   - Enhance retrieval using structured data from Knowledge Graphs using Neo4j.
    - Use query mechanisms to extract meaningful relationships and concepts.
 
 3. **Vector Search Implementation**:
-   - Generate embeddings for text data using pre-trained models .
+   - Generate embeddings for text data using pre-trained models with Pinecone.
    - Use vector search libraries for efficient retrieval.
 
 4. **RAG Pipeline**:
@@ -49,8 +28,39 @@ This project implements a Retrieval-Augmented Generation (RAG) application that 
 
 ---
 
+## Libraries Needed
+Ensure you have the following libraries installed before running the project:
+
+1. **Data Processing**:
+   - `pandas`
+   - `pyarrow`
+   - `datasets`
+   - `spacy`
+
+2. **Embedding Generation**:
+   - `transformers`
+   - `torch`
+   - `tiktoken`
+
+3. **Vector Search**:
+   - `pinecone-client`
+
+4. **Knowledge Graph Integration**:
+   - `neo4j`
+   - `tqdm`
+
+5. **Utilities**:
+   - `langchain`
+   - `re`
+
+---
+
 ## Installation
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-repo-name.git
    cd your-repo-name
+
+## Contributors
+
+Paola Munoz
